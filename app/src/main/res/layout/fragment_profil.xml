@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profil.ProfilFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="60dp"
+        android:scrollbarSize="2dp"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ly_noedit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_upload"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    app:civ_border_color="@color/greyButton"
+                    app:civ_border_width="1dp"
+                    app:civ_circle_background_color="@color/white"
+                    tools:ignore="ContentDescription" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_edit_foto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Ubah Foto"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Nama"
+                    android:textColor="@color/blackSoft"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_nama_noedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_stroke_grey"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:hint="Masukkan Nama Anda"
+                    android:padding="12dp"
+                    android:textColor="@color/blackSoft"
+                    android:textSize="@dimen/fontsize15" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Telepon"
+                    android:textColor="@color/blackSoft"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_telp_noedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_stroke_grey"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:hint="Masukkan Nomor Telepon"
+                    android:padding="12dp"
+                    android:textColor="@color/blackSoft"
+                    android:textSize="@dimen/fontsize15" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Pin"
+                    android:textColor="@color/blackSoft"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_pin_noedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_stroke_grey"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:hint="PIN"
+                    android:padding="12dp"
+                    android:textColor="@color/blackSoft"
+                    android:textSize="@dimen/fontsize15" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Email"
+                    android:textColor="@color/blackSoft"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_email_noedit"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="30dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_stroke_grey"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:hint="Masukkan Email Anda"
+                    android:padding="12dp"
+                    android:textColor="@color/blackSoft"
+                    android:textSize="@dimen/fontsize15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_upload_edit"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    app:civ_border_color="@color/greyButton"
+                    app:civ_border_width="1dp"
+                    app:civ_circle_background_color="@color/white"
+                    tools:ignore="ContentDescription" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_edit_foto_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Ubah Foto"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_simpan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Simpan"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Nama"
+                    android:textColor="@color/blackSoft"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edititext"
+                    android:hint="Masukkan Nama Anda"
+                    android:inputType="textCapSentences"
+                    android:padding="12dp"
+                    android:textColor="@color/blackSoft"
+                    android:textSize="@dimen/fontsize15" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Telepon"
+                    android:textColor="@color/blackSoft"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_telp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edititext"
+                    android:hint="Masukkan Nomor Telepon"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:textColor="@color/blackSoft"
+                    android:textSize="@dimen/fontsize15" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Pin"
+                    android:textColor="@color/blackSoft"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext_noedit"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:hint="PIN"
+                    android:padding="12dp"
+                    android:textColor="@color/blackSoft"
+                    android:textSize="@dimen/fontsize15" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Email"
+                    android:textColor="@color/blackSoft"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/bg_edittext_noedit"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:hint="Masukkan Email Anda"
+                    android:padding="12dp"
+                    android:textColor="@color/blackSoft"
+                    android:textSize="@dimen/fontsize15" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_primary"
+        android:text="Kirim"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</RelativeLayout>

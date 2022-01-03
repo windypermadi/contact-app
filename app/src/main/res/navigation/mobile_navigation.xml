@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_grup">
+
+    <fragment
+        android:id="@+id/nav_profil"
+        android:name="com.windypermadi.yestodopersonal.ui.profil.ProfilFragment"
+        android:label="@string/menu_profil"
+        tools:layout="@layout/fragment_profil" />
+
+    <fragment
+        android:id="@+id/nav_grup"
+        android:name="com.windypermadi.yestodopersonal.ui.grup.GrupFragment"
+        android:label="@string/menu_grup"
+        tools:layout="@layout/fragment_grup" />
+
+    <fragment
+        android:id="@+id/nav_kontak"
+        android:name="com.windypermadi.yestodopersonal.ui.kontak.KontakFragment"
+        android:label="@string/menu_kontak"
+        tools:layout="@layout/fragment_kontak" />
+
+    <fragment
+        android:id="@+id/nav_katasandi"
+        android:name="com.windypermadi.yestodopersonal.ui.katasandi.KataSandiFragment"
+        android:label="@string/menu_katasandi"
+        tools:layout="@layout/fragment_kata_sandi" />
+
+    <fragment
+        android:id="@+id/nav_kebijakan"
+        android:name="com.windypermadi.yestodopersonal.ui.kebijakan.KebijakanFragment"
+        android:label="@string/menu_katasandi"
+        tools:layout="@layout/fragment_kebijakan" />
+
+    <fragment
+        android:id="@+id/nav_ketentuan"
+        android:name="com.windypermadi.yestodopersonal.ui.layanan.LayananFragment"
+        android:label="@string/menu_katasandi"
+        tools:layout="@layout/fragment_layanan" />
+</navigation>

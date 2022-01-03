@@ -1,0 +1,57 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/fontsize8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@+id/cb"
+            android:layout_toEndOf="@+id/ci_imageview"
+            android:fontFamily="@font/font_reguler"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            tools:text="Windy Permadi" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ci_imageview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@color/greyButton"
+            app:civ_border_color="@color/black_grey"
+            app:civ_border_width="1dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@+id/cb"
+            android:layout_toEndOf="@+id/ci_imageview"
+            android:fontFamily="@font/font_reguler"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            tools:text="Windy Permadi" />
+
+        <CheckBox
+            android:id="@+id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

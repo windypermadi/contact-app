@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.grup.tambah.TambahGrup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/custom_toolbar_b2c" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_primary"
+                    android:fontFamily="@font/font_reguler"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Akan"
+                    android:textColor="@color/white"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_background_grey"
+                    android:fontFamily="@font/font_reguler"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Sedang"
+                    android:textColor="@color/greyButton"
+                    tools:ignore="HardcodedText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_background_grey"
+                    android:fontFamily="@font/font_reguler"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Selesai"
+                    android:textColor="@color/greyButton"
+                    tools:ignore="HardcodedText" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <include layout="@layout/custom_detail_grup" />
+
+            <include layout="@layout/custom_detail_grup" />
+
+            <include layout="@layout/custom_detail_grup" />
+
+            <include layout="@layout/custom_detail_grup" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
